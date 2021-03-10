@@ -1,13 +1,16 @@
 <template>
-  <div class="book">
-    <div>dadada</div>
+  <div class="create">
+    <detail :is-edit="false" />
   </div>
 </template>
 
 <script>
-export default {
-  components: {
 
+import Detail from './components/Detail.vue'
+export default {
+  name: 'Create',
+  components: {
+    Detail
   },
   data() {
     return {

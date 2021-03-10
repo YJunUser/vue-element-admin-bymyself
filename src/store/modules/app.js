@@ -2,7 +2,7 @@ import Cookies from 'js-cookie'
 
 const state = {
   sidebar: {
-    opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true,
+    opened: Cookies.get('sidebarStatus') ? !!+Cookies.get('sidebarStatus') : true, // +号转成数值, !!转成布尔型
     withoutAnimation: false
   },
   device: 'desktop',
